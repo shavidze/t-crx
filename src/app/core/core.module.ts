@@ -9,7 +9,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, HttpClientModule,FormsModule,BrowserAnimationsModule],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule,
+  ],
   providers: [httpInterceptorProviders],
 })
 export class CoreModule {

@@ -1,28 +1,25 @@
 @import "~bootstrap/scss/bootstrap";
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import '~@angular/cdk/overlay-prebuilt.css';
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~@angular/cdk/overlay-prebuilt.css";
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-body{
-    font-family: 'Abel', sans-serif;
-    background-color: rgba(248,189,67);
+body {
+  font-family: "Abel", sans-serif;
+  background-color: rgba(248, 189, 67);
 }
-
 
 .dark-theme {
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
-  }
-  
-.light-theme {
-    color: rgba(0, 0, 0, 0.71);
-    background: rgba(255, 255, 255, 0.8);
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
 }
 
+.light-theme {
+  color: rgba(0, 0, 0, 0.71);
+  background: rgba(255, 255, 255, 0.8);
+}

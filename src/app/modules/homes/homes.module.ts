@@ -13,12 +13,10 @@ import { EffectsModule } from '@ngrx/effects';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 export const MATERIAL_IMPORTS = [
   MatInputModule,
@@ -26,7 +24,7 @@ export const MATERIAL_IMPORTS = [
   MatSelectModule,
   MatFormFieldModule,
   MatAutocompleteModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
 ];
 
 @NgModule({
@@ -37,7 +35,7 @@ export const MATERIAL_IMPORTS = [
     StoreModule.forFeature('homes', reducers),
     EffectsModule.forFeature([HomesEffects]),
     ReactiveFormsModule,
-    ...MATERIAL_IMPORTS
+    ...MATERIAL_IMPORTS,
   ],
 })
 export class HomesModule {}

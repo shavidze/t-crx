@@ -14,27 +14,21 @@ import * as fromHomes from '../../store/reducers';
 })
 export class HomeDetailsComponent implements OnInit {
   homeItem: ItemModel;
-  
-  private destruct$ = new Subject();
-  
-  constructor(
-    private store :Store<fromHomes.State>
-  ) {
 
-  }
+  private destruct$ = new Subject();
+
+  constructor(private store: Store<fromHomes.State>) {}
 
   ngOnInit(): void {
     this.getHome();
   }
 
   private getHome() {
-    this.store.dispatch(new GetHomeItem())
-    this.store.pipe(
-      takeUntil(this.destruct$),
-      select(fromHomes.homes.item),
-    ).subscribe(item => {
-      this.homeItem = item;
-    })
+    this.store.dispatch(new GetHomeItem());
+    this.store
+      .pipe(takeUntil(this.destruct$), select(fromHomes.homes.item))
+      .subscribe((item) => {
+        this.homeItem = item;
+      });
   }
-
 }

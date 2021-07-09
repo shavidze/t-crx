@@ -9,7 +9,10 @@
         [matAutocomplete]="auto"
       />
       <mat-autocomplete #auto="matAutocomplete">
-        <mat-option *ngFor="let option of filteredOptions$ | async" [value]="option.match">
+        <mat-option
+          *ngFor="let option of filteredOptions$ | async"
+          [value]="option.match"
+        >
           {{ option.match }}
         </mat-option>
       </mat-autocomplete>
@@ -19,19 +22,25 @@
     <div class="new-data btn btn-success">New</div>
   </div>
   <div class="homes-container container">
-    <div *ngFor="let item of data$ | async; trackBy: trackByFn; index as i;">
-      <ng-container *ngIf="i===4">
+    <div *ngFor="let item of data$ | async; trackBy: trackByFn; index as i">
+      <ng-container *ngIf="i === 4">
         <div class="container d-flex ml-5 justify-content-start">
           <div class="new-data btn btn-success">Old</div>
         </div>
-      </ng-container> 
-        <a class="card p-1 m-1 mr-2 dark-theme" [routerLink]="['/',item.id]" routerLinkActive="router-link-active" >
-          <img class="card-img-top" [src]="item.imgUrl" alt="Card image cap" />
-          <div class="card-body">
-            <p class="card-title box-shadow"><span>{{ item.name }}</span></p>
-            <p class="card-text">{{ item.address }}</p>
-          </div>
-        </a>
+      </ng-container>
+      <a
+        class="card p-1 m-1 mr-2 dark-theme"
+        [routerLink]="['/', item.id]"
+        routerLinkActive="router-link-active"
+      >
+        <img class="card-img-top" [src]="item.imgUrl" alt="Card image cap" />
+        <div class="card-body">
+          <p class="card-title box-shadow">
+            <span>{{ item.name }}</span>
+          </p>
+          <p class="card-text">{{ item.address }}</p>
+        </div>
+      </a>
     </div>
   </div>
   <div *ngIf="isLoading && canLoadMore">

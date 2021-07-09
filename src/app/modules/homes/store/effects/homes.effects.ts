@@ -23,11 +23,16 @@ export class HomesEffects {
   getHomesList$: Observable<Action> = this.actions$.pipe(
     ofType<GetHomesList>(HomesActionTypes.GetHomesList),
     mergeMap((action: GetHomesList) => {
-      return this.homesService.getHomesList({_page:action.payload._page, _limit: action.payload._limit}).pipe(
-        map((items) => {
-          return new GetHomesListSuccess({ data: items });
+      return this.homesService
+        .getHomesList({
+          _page: action.payload._page,
+          _limit: action.payload._limit,
         })
-      );
+        .pipe(
+          map((items) => {
+            return new GetHomesListSuccess({ data: items });
+          })
+        );
     })
   );
 
@@ -53,25 +58,28 @@ export class HomesEffects {
         })
       );
     })
-  )
+  );
 
   @Effect()
-  LoadMoreHomesList$ : Observable<Action> = this.actions$.pipe(
+  LoadMoreHomesList$: Observable<Action> = this.actions$.pipe(
     ofType<LoadMoreHomeList>(HomesActionTypes.LoadMoreHomeList),
-    mergeMap((action:LoadMoreHomeList) => {
-      return this.homesService.getHomesList({_page:action.payload._page, _limit: action.payload._limit}).pipe(
-        map(items => {
-          if(items.length === 0){
-            return new LoadMoreHomeListFailed();
-          } else{
-            return new LoadMoreHomeListSuccess({data: items})
-          }
+    mergeMap((action: LoadMoreHomeList) => {
+      return this.homesService
+        .getHomesList({
+          _page: action.payload._page,
+          _limit: action.payload._limit,
         })
-      )
+        .pipe(
+          map((items) => {
+            if (items.length === 0) {
+              return new LoadMoreHomeListFailed();
+            } else {
+              return new LoadMoreHomeListSuccess({ data: items });
+            }
+          })
+        );
     })
-  )
-
-
+  );
 
   constructor(private actions$: Actions, private homesService: HomesService) {}
 }

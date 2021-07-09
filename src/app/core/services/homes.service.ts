@@ -6,20 +6,21 @@ import { ItemsModel } from '@core/models/items.model';
 
 @Injectable({ providedIn: 'root' })
 export class HomesService {
-
   public constructor(private httpClient: HttpClient) {}
 
-  getHomesList(params:{ [key: string]: string | string[] } = {}):Observable<any> {
-    return timer(0, 12343000).pipe(
-      switchMap(() => this.httpClient.get('/homes',{params}))
+  getHomesList(
+    params: { [key: string]: string | string[] } = {}
+  ): Observable<any> {
+    return timer(0, 300000).pipe(
+      switchMap(() => this.httpClient.get('/homes', { params }))
     );
   }
 
-  getSearchOptions(){
+  getSearchOptions() {
     return this.httpClient.get('/searchOptions');
   }
 
-  getItem(){
+  getItem() {
     return this.httpClient.get('/item');
   }
 }

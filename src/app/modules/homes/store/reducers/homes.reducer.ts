@@ -7,7 +7,7 @@ export interface State {
   item: ItemModel;
   homes: HomeModel[];
   searchOptions: SearchOptionModel[];
-  canLoadMore:boolean;
+  canLoadMore: boolean;
   loading: boolean;
 }
 
@@ -16,45 +16,45 @@ export const initialState: State = {
   homes: [],
   searchOptions: [],
   canLoadMore: true,
-  loading: false
+  loading: false,
 };
 
 export function reducer(state: State, action: HomesActionUnion): State {
   state = Object.assign({}, initialState, state);
-  
+
   switch (action.type) {
-    case HomesActionTypes.GetHomesListSuccess:     
+    case HomesActionTypes.GetHomesListSuccess:
       return {
         ...state,
-        homes:action.payload.data,
+        homes: action.payload.data,
       };
     case HomesActionTypes.LoadMoreHomeListSuccess:
-      return {  
+      return {
         ...state,
         loading: false,
-        homes:[...state.homes,...action.payload.data]
-      }
+        homes: [...state.homes, ...action.payload.data],
+      };
     case HomesActionTypes.LoadMoreHomeListFailed:
       return {
         ...state,
-        loading:false,
-        canLoadMore: false
-      }
+        loading: false,
+        canLoadMore: false,
+      };
     case HomesActionTypes.GetSearchOptionsSuccess:
       return {
         ...state,
-        searchOptions:action.payload.data
-      }
+        searchOptions: action.payload.data,
+      };
     case HomesActionTypes.GetHomeItemSuccess:
       return {
         ...state,
-        item:action.payload.data
-      }
+        item: action.payload.data,
+      };
     case HomesActionTypes.StartLoading:
       return {
         ...state,
-        loading: true
-      }
+        loading: true,
+      };
     default: {
       return state;
     }

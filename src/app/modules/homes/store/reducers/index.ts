@@ -30,20 +30,17 @@ export const homes = {
     getHomesState,
     (state: fromHomes.State) => state.homes
   ),
-  item: createSelector(
-    getHomesState,
-    (state:fromHomes.State) => state.item
-  ),
+  item: createSelector(getHomesState, (state: fromHomes.State) => state.item),
   searchOptions: createSelector(
     getHomesState,
-    (state:fromHomes.State) => state.searchOptions
+    (state: fromHomes.State) => state.searchOptions
   ),
   canLoadMore: createSelector(
     getHomesState,
-    (state:fromHomes.State) => state.canLoadMore
+    (state: fromHomes.State) => state.canLoadMore
   ),
   loading: createSelector(
     getHomesState,
-    (state:fromHomes.State) => state.loading
-  )
+    (state: fromHomes.State) => state.loading
+  ),
 };
