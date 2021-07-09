@@ -1,0 +1,32 @@
+.card{
+    max-width: 800px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    flex:1;
+    list-style-type: none;
+    cursor: pointer;
+    background-color: rgba(248,189,67);
+    &-img-top{
+        max-width: 100%;
+        width: 350px;
+        height: 200px;
+    }
+    &-title{
+        & > span{
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+    &-body{
+        padding: 0 !important;
+        margin: 0 0 0 80px;
+    }
+  }
+  .home-details{
+    padding:55px;
+  }
+
+ 
+

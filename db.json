@@ -1,0 +1,201 @@
+{
+    "homes": [
+      {
+        "id": 1,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Champs-Élysées",
+        "address": "Berlin"
+      },
+      {
+        "id": 2,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 3,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "London"
+      },
+      {
+        "id": 4,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 5,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 6,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Tbilisi"
+      },
+      {
+        "id": 7,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Los-Angeles"
+      },
+      {
+        "id": 8,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Tbilisi"
+      },
+      {
+        "id": 9,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 10,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "New-York"
+      },
+      {
+        "id": 11,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Tbilisi"
+      },
+      {
+        "id": 12,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 13,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "New-York"
+      },
+      {
+        "id": 14,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Tbilisi"
+      },
+      {
+        "id": 15,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 16,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "New-York"
+      },
+      {
+        "id": 17,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Tbilisi"
+      },
+      {
+        "id": 18,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 19,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "New-York"
+      },
+      {
+        "id": 20,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Tbilisi"
+      },
+      {
+        "id": 21,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 22,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "New-York"
+      },
+      {
+        "id": 23,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Tbilisi"
+      },
+      {
+        "id": 24,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 25,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "New-York"
+      },
+      {
+        "id": 26,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "Tbilisi"
+      },
+      {
+        "id": 27,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "San-Francisco"
+      },
+      {
+        "id": 28,
+        "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+        "name": "Home name at beach",
+        "address": "New-York"
+      }
+    ],
+  "searchOptions":[
+    {
+    "match": "Los-Angeles",
+    "kind": "location"
+  },
+  {
+    "match": "San-Francisco",
+    "kind": "location"
+  },
+  {
+    "match": "New-York",
+    "kind": "location"
+  },
+  {
+    "match": "Tbilisi",
+    "kind": "location"
+  },
+  {
+    "match": "Home name at beach",
+    "kind": "name"
+  }],
+  "item":{
+    "id": 1,
+      "imgUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg",
+      "name": "Champs-Élysées",
+      "address": "Georgia/Tbilisi",
+      "price": 500000,
+      "sqft": 250
+  }
+}
